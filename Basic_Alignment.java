@@ -10,7 +10,7 @@ import java.lang.StringBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-class Basic_4264649669_5807825570 {
+class Basic_Alignment {
     
     // ========================================================================
     // ------------------------- Start of Enumeration -------------------------
