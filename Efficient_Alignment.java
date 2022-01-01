@@ -10,7 +10,7 @@ import java.lang.StringBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-class Efficient_4264649669_5807825570 {
+class Efficient_Alignment {
     
     // ========================================================================
     // ------------------------- Start of Enumeration -------------------------
