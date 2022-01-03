@@ -22,7 +22,7 @@ Step 1.b: Run the memory-efficient algorithm with test case 20 (java Efficient_A
 
 Step 2: Check the generated "output.txt" file for the program's output. The output file will be over-written each time the program is run.
 
-## How to all the test cases and print to one giant output file
+## How to run all of the test cases and print to one giant output file
 
 Step 1: Make the two provided scripts executable (chmod +x *Tests.sh).
 
