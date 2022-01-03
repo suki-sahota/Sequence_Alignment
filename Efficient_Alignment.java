@@ -215,8 +215,8 @@ class Efficient_Alignment {
         }
 
         // TEST PRINTING
-	    // int sum = cumulative_one.length() + cumulative_two.length();
-	    // System.out.println("m+n: " + sum);
+        // int sum = cumulative_one.length() + cumulative_two.length();
+        // System.out.println("m+n: " + sum);
 
         averageMemoryUsage(); // This function is called multiple times
     }
@@ -491,19 +491,19 @@ class Efficient_Alignment {
                 OPT[i][j] == OPT[i - 1][j - 1] + mismatch_cost)
             {
                 // Both symbols used in this step
-                firstResult.append(X.charAt(i - 1));
-                secondResult.append(Y.charAt(j - 1));
+                firstResult.append(a.label);
+                secondResult.append(b.label);
                 --i;
                 --j;
             } else if (i > 0 && OPT[i][j] == OPT[i - 1][j] + GAP) {
                 // Symbol from first string used with gap from second string
-                firstResult.append(X.charAt(i - 1));
+                firstResult.append(a.label);
                 secondResult.append("_");
                 --i;
             } else {
                 // Symbol from second string used with gap from first string
                 firstResult.append("_");
-                secondResult.append(Y.charAt(j - 1));
+                secondResult.append(b.label);
                 --j;
             }
         }
@@ -639,8 +639,8 @@ class Efficient_Alignment {
         myWriter.write(String.valueOf(elapsedTime));
         myWriter.write("\n");
 
-	    // TEST PRINTING
-	    // System.out.println("Time: " + String.valueOf(elapsedTime));
+        // TEST PRINTING
+        // System.out.println("Time: " + String.valueOf(elapsedTime));
     }
 
     /* Writes memory used to the output file in KiloBytes.
@@ -655,8 +655,8 @@ class Efficient_Alignment {
         myWriter.write(String.valueOf(memory));
         myWriter.write("\n");
 
-	    // TEST PRINTING
-	    // System.out.println("Memory: " + String.valueOf(memory) + "\n");
+        // TEST PRINTING
+        // System.out.println("Memory: " + String.valueOf(memory) + "\n");
     }
 
     /* Handles one iteration during the process
@@ -695,7 +695,10 @@ class Efficient_Alignment {
             return;
         } else {
             // Value does not assert correctly
-            System.err.println("PANIC: value did not assert properly on line " + lineNumber);
+            System.err.println(
+                "PANIC: value did not assert properly on line "
+                + lineNumber
+            );
             System.exit(1); // exit the program with failure code 1
         }
     }
