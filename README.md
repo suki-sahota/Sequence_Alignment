@@ -17,12 +17,26 @@ Step 2: Download a JVM to run Java programs.
 Step 1: Compile the java programs with 
 
 javac sequencealignment/utils/Utilities.java
+
+
 javac sequencealignment/symbol/Symbol.java
+
+
 javac sequencealignment/output/Output.java
+
+
 javac sequencealignment/input/Input.java
+
+
 javac sequencealignment/basic/Basic.java
+
+
 javac sequencealignment/efficient/Efficient.java
+
+
 javac sequencealignment/Basic_Alignment.java
+
+
 javac sequencealignment/Efficient_Alignment.java
 
 Step 2.a: Run the basic algorithm with test case 20 (java sequencealignment/Basic_Alignment TestCases/input20.txt) or with test case 1 (java sequencealignment/Basic_Alignment TestCases/input1.txt) or any test case inbetween.
